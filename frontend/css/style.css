@@ -1,0 +1,82 @@
+.logo
+{
+    width: 50%;
+   
+}
+.navBar
+{
+    display: flex;
+    background-color: #F3E9F1;
+}
+.panier
+{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+a
+{
+   text-decoration: none;
+   color: black;
+}
+a:hover
+{
+    text-decoration: none;
+    color: black;
+}
+.card
+{
+    height: 400px;
+    width: 400px;
+    border: solid 1px black;
+    margin: 20px;
+    box-shadow: 2px 2px 3px 2px grey;
+    background-color: #F3E9F1; 
+}
+.card:hover
+{
+    transform: scale(1.1);
+}
+
+#container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h3
+{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+   
+    
+}
+img
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin : auto;
+}
+.colors{
+text-align: center;
+text-decoration: none;
+}
+.description
+{
+text-align: center;
+text-decoration: none;
+}
+.price
+{
+text-align: center;
+}
+#confirmation_commande
+{
+
+font-size: 30px;
+text-align: center;
+
+}

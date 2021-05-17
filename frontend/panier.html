@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Orinoco</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+
+    <header>
+       <div class="navBar">
+       <a href="index.html"><img class="logo"  src="https://user.oc-static.com/upload/2019/09/04/15675819263013_image1.png" alt="logo orinoco"></a> 
+        <a class="panier" href="panier.html">Panier</a>
+    </div>
+    </header>
+    <div id="container">
+        <div id="basket">
+            <h2 class="recapitulatif">Récapitulatif de commande</h2>
+            <table id="firstTable">
+
+
+            </table>
+
+        </div>
+
+        <div id="confirmation">
+            <h2 class="confirmation">Confirmation de commande</h2>
+            <div id="secondTable">
+                <form action="http://localhost:3000/api/teddies/order" method="POST">
+
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" maxlength="20" required>
+                    <span id="missPrenom"></span>
+
+                    <label for="lastName">Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+
+                    <label for="adress">Adresse :</label>
+                    <textarea  id="adresse" name="adresse" required></textarea>
+
+                    <label for="city">ville :</label>
+                    <input type="text" id="ville" name="ville" required>
+
+                    <label for="email">E-mail :</label>
+                    <input type="email" id="email" name="email" required>
+
+                </form>
+
+          <button type="submit"  id="button_confirmation" name="envoyerFormulaire">Confirmation de commande</button>
+
+
+            </div>
+
+        </div>
+        
+            </div>
+            
+</body>
+<script type="text/javascript" src="js/basket.js"></script>
+
+</html>
